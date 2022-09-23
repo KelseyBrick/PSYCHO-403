@@ -108,3 +108,23 @@ print(1 == 1.0 and "1" == "1.0" or 5 == (3+2))
 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 
 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
 ```
+
+### Dictionary Exercises
+1. See code example:
+```
+ about_me = {'Name': "Kelsey Brick", 
+             'Age': 40.0, 
+             'Year of Study': 8, 
+             'Favorite foods': ['tacos', 'grilled cheese', 'sushi']
+             }
+```
+2. See python output:
+```
+ print(about_me)
+ {'Name': 'Kelsey Brick', 'Age': 40.0, 'Year of Study': 8, 
+ 'Favorite foods': ['tacos', 'grilled cheese', 'sushi']}
+```
+```
+ type(about_me)
+ Out[71]: dict
+```
