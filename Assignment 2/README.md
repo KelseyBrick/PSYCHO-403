@@ -118,6 +118,8 @@ print(1 == 1.0 and "1" == "1.0" or 5 == (3+2))
              'Favorite foods': ['tacos', 'grilled cheese', 'sushi']
              }
 ```
+<img width="491" alt="image" src="https://user-images.githubusercontent.com/113373038/192044678-50f9d166-eb0f-4ea0-92cb-b941dca36a29.png">
+
 2. See python output:
 ```
  print(about_me)
@@ -129,4 +131,4 @@ print(1 == 1.0 and "1" == "1.0" or 5 == (3+2))
  Out[71]: dict
 ```
 3. The len() function returns a value of 4. Python is using the number of "text labels" to determine length.
-   (i.e., 'Name', 'Age', 'Year of Study', 'Favorite foods')
+   (i.e., 'Name', 'Age', 'Year of Study', 'Favorite foods' = length of 4)
