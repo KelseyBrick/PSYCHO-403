@@ -166,4 +166,5 @@ print(1 == 1.0 and "1" == "1.0" or 5 == (3+2))
   1.58489319e+04 2.92864456e+04 5.41169527e+04 1.00000000e+05]
 ```
 Plot output:
+
 ![image](https://user-images.githubusercontent.com/113373038/192048887-3046bb0d-490f-4879-8f23-ecd365e60860.png)
