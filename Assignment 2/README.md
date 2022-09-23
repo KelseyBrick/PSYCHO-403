@@ -71,4 +71,16 @@
      However, "LetterX" remained equal to "K" because this command came first.
 
 ### Boolean Exercises
+1. Yes, in python boolean code returns "print(1 == 1.0)" as TRUE.
+2. Yes, in python boolean code returns "print(5 == (3+2))" as TRUE.
+3. The following code all produced "True" outputs in python:
+```
+print(1 == 1.0 and not "1" == "1.0" and 5 == (3+2))
+print(1 == 1.0 and not "1" == "1.0" or 5 == (3+2))
+print(1 == 1.0 or "1" == "1.0" and 5 == (3+2))
+print(1 == 1.0 or "1" == "1.0" and not 5 == (3+2))
+print(1 == 1.0 and "1" == "1.0" or 5 == (3+2))
+```
+
+### List Exercises
 1. 
