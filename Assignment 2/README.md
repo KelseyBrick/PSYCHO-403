@@ -57,7 +57,7 @@
 ```
 
 ### Variable Exercises
-1. See: [KelseyBrick_2.py](EDIT ME)
+1. See: [KelseyBrick_2.py](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Assignment%202/KelseyBrick_2.py)
 2. Yes, the variables show up in the editor as strings (Type = str)
 3. N/A (there are repeated letters in my name, go to question 4).
 4. No, python is outputting the same letter multiple times.
