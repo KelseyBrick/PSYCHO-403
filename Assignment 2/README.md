@@ -128,3 +128,5 @@ print(1 == 1.0 and "1" == "1.0" or 5 == (3+2))
  type(about_me)
  Out[71]: dict
 ```
+3. The len() function returns a value of 4. Python is using the number of "text labels" to determine length.
+   (i.e., 'Name', 'Age', 'Year of Study', 'Favorite foods')
