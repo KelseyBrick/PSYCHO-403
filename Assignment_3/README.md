@@ -3,21 +3,22 @@
 Print(sub_code + subnr_int) does not work because you cannot concatenate an integer to a string.
 ```
 print(sub_code + subnr_int)
-  TypeError: can only concatenate str (not "int") to str
 print(sub_code + subnr_str)
-  sub2
 ```
-2. The following code outputs:
+  TypeError: can only concatenate str (not "int") to str <br>
+  sub2
+
+2. See the following code outputs:
 ```
 print(sub_code + "" + subnr_str)
-  sub 2
 print(sub_code + " " + subnr_str + subnr_str + subnr_str)
-  sub 222
 print((sub_code + subnr_str)*3)
-  sub2sub2sub2
 print(sub_code + sub_code +sub_code + subnr_str + subnr_str + subnr_str)
-  subsubsub222
 ```
+  sub 2 <br>
+  sub 222 <br>
+  sub2sub2sub2 <br>
+  subsubsub222 
 
 ### List operations exercises
 1. Create a list of numbers [1,2,3] called "numlist". Multiply the list by 
