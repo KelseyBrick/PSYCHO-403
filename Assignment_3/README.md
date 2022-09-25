@@ -1,6 +1,12 @@
 ### Variable operation exercises
-1. Create three variables: "sub_code", "subnr_int", and "subnr_str". The sub_code should be "sub". Assign the integer 2 to subnr_int, and assign the string "2" to subnr_str. Which form of subnr (int or str) can be added to sub_code to create the output "sub2"? Why don't both work?
-
+1. The fuction print(sub_code + subnr_str) creates the output "sub2."
+Print(sub_code + subnr_int) does not work because you cannot concatenate an integer to a string.
+```
+print(sub_code + subnr_int)
+TypeError: can only concatenate str (not "int") to str
+print(sub_code + subnr_str)
+sub2
+```
 2. Use operations to create the following outputs with your variables:
 "sub 2"
 "sub 222"
