@@ -13,7 +13,7 @@ print(sub_code + subnr_str)
 print(sub_code + "" + subnr_str)
 print(sub_code + " " + subnr_str + subnr_str + subnr_str)
 print((sub_code + subnr_str)*3)
-print(sub_code + sub_code +sub_code + subnr_str + subnr_str + subnr_str)
+print(sub_code + sub_code + sub_code + subnr_str + subnr_str + subnr_str)
 ```
   sub 2 <br>
   sub 222 <br>
