@@ -21,8 +21,28 @@ print(sub_code + sub_code +sub_code + subnr_str + subnr_str + subnr_str)
   subsubsub222 
 
 ### List operations exercises
-1. Create a list of numbers [1,2,3] called "numlist". Multiply the list by 
-2. Create a numpy array of numbers [1,2,3] called "numarr". Multiply the array by 2. What is the difference between multiplying lists and multiplying arrays?
+1. See code:
+```
+numlist = [1, 2, 3]*2
+print(numlist)
+```
+[1, 2, 3, 1, 2, 3]
+
+2. See code:
+```
+import numpy as np
+numarr = np.array([1, 2, 3])*2
+print(numarr)
+```
+[2 4 6]
+
+Multiplying a list by 2 duplicates the list by 2, whereas multiplying the array by 2 multiplies each value in the array by 2. 2, in this example, could be substituted for any value x. For example:
+```
+numlist2 = [1, 2, 3]*4
+print(numlist2)
+```
+[1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]
+
 3. Create a list of strings ['do','re','mi','fa'] called "strlist". Use operations to create the following outputs with your variable:
 ['dodo','rere','mimi','fafa']
 ['do','re','mi','fa','do','re','mi','fa']
