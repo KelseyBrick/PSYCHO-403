@@ -71,9 +71,9 @@ print([ [strlist[0], strlist[0]],
 [['do', 'do'], ['re', 're'], ['mi', 'mi'], ['fa', 'fa']]
 
 ### Zipping exercises
-See file: (here)[] 
+[Zip exercises file](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Assignment_3/zip_exercise.py)
 
-####Variable Explorer comparison: balanced vs. counterbalnced of master list post np.random.shuffle() application.
+**Variable Explorer comparison: balanced vs. counterbalnced of master list post np.random.shuffle() application.**
 <img width="529" alt="image" src="https://user-images.githubusercontent.com/113373038/193157832-7a143f6d-3edf-44d7-927b-8763d194798c.png">
 
 
