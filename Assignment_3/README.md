@@ -43,11 +43,32 @@ print(numlist2)
 ```
 [1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]
 
-3. Create a list of strings ['do','re','mi','fa'] called "strlist". Use operations to create the following outputs with your variable:
-['dodo','rere','mimi','fafa']
-['do','re','mi','fa','do','re','mi','fa']
-['do','do','re','re','mi','mi','fa','fa']
-[['do','do'],['re','re'],['mi','mi'],['fa','fa']]
+3. See code:
+```
+strlist = ['do','re','mi','fa']
+print([strlist[0]*2, strlist[1]*2, strlist[2]*2, strlist[3]*2])
+```
+['dodo', 'rere', 'mimi', 'fafa']
+```
+print(strlist *2)
+```
+['do', 're', 'mi', 'fa', 'do', 're', 'mi', 'fa']
+```
+print([ strlist[0], strlist[0], 
+        strlist[1], strlist[1], 
+        strlist[2], strlist[2], 
+        strlist[3], strlist[3]
+      ])
+```
+['do', 'do', 're', 're', 'mi', 'mi', 'fa', 'fa']
+```
+print([ [strlist[0], strlist[0]], 
+        [strlist[1], strlist[1]], 
+        [strlist[2], strlist[2]], 
+        [strlist[3], strlist[3]]
+      ])
+```
+[['do', 'do'], ['re', 're'], ['mi', 'mi'], ['fa', 'fa']]
 
 ### Zipping exercises
 You are designing a memory experiment in which 1 face and 1 house are presented on each trial, one after the other, followed by a post-cue that tells the participant which of the two images to remember. You want to present all combinations of stimuli an equal number of times, with a random trial order for each participant. The order of image presentations (face first or house first) should also be counterbalanced ahead of time.
