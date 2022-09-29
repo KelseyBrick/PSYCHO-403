@@ -71,17 +71,11 @@ print([ [strlist[0], strlist[0]],
 [['do', 'do'], ['re', 're'], ['mi', 'mi'], ['fa', 'fa']]
 
 ### Zipping exercises
-You are designing a memory experiment in which 1 face and 1 house are presented on each trial, one after the other, followed by a post-cue that tells the participant which of the two images to remember. You want to present all combinations of stimuli an equal number of times, with a random trial order for each participant. The order of image presentations (face first or house first) should also be counterbalanced ahead of time.
+See file: (here)[] 
 
-Specifically, you have:
+####Variable Explorer comparison: balanced vs. counterbalnced of master list post np.random.shuffle() application.
+<img width="529" alt="image" src="https://user-images.githubusercontent.com/113373038/193157832-7a143f6d-3edf-44d7-927b-8763d194798c.png">
 
-2 categories of images (faces, houses)
-5 images from each category
-2 post-cues (1,2)
-Create a script that outputs a counterbalanced list with every face paired with every house, repeated with each possible post-cue. Then, randomize the order of the list. The final output should look something like this:
-
-[(face1.png, house2.png, cue1),
-(house5.png, face1.png, cue2)...]
 
 ### Indexing Exercises
 1. Create a list of strings called "colors", containing the following colors in this order: red, orange, yellow, green, blue, purple
