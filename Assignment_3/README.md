@@ -78,20 +78,20 @@ print([ [strlist[0], strlist[0]],
 
 
 ### Indexing Exercises
-1. See code:
+1. Create a list of strings called "colors", containing the following colors in this order: red, orange, yellow, green, blue, purple. See code:
 ```
 colours = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
 print(colours)
 ```
 ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
 
-2. Using indexing, print the penultimate color.
+2. Using indexing, print the penultimate color. See code:
 ```
 print(colours[-2])
 ```
 blue
 
-3. Using indexing, print the 3rd and 4th characters of the penultimate color.
+3. Using indexing, print the 3rd and 4th characters of the penultimate color. See code:
 ```
 print(colours[-2][2])
 print(colours[-2][3])
@@ -99,7 +99,7 @@ print(colours[-2][3])
 u
 e
 
-4. Using indexing, remove the color "purple" and add "indigo" and "violet" to the list instead.
+4. Using indexing, remove the color "purple" and add "indigo" and "violet" to the list instead. See code:
 ```
 colours.remove("purple")
 print(colours)
@@ -112,7 +112,41 @@ print(colours)
 
 ### Slicing exercises
 1. Create a list of numbers 0-100 called "list100".
+```
+list100 = range(101)
+print(list(list100))
+```
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, <br>
+20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, <br>
+40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, <br>
+60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, <br>
+80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+
 2. Using slicing, print the first 10 numbers in the list.
+```
+print(list(list100[:10])) 
+```
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
 3. Using slicing, print all the odd numbers in the list backwards.
+```
+print(list(list100[99::-2]))   
+```
+[99, 97, 95, 93, 91, 89, 87, 85, 83, 81, 79, 77, 75, 73, 71, 69, 67, 65, 63, 61, <br>
+59, 57, 55, 53, 51, 49, 47, 45, 43, 41, 39, 37, 35, 33, 31, 29, 27, 25, 23, 21, <br>
+19, 17, 15, 13, 11, 9, 7, 5, 3, 1]
+
 4. Using slicing, print the last four numbers in the list backwards.
+```
+print(list(list100[100:96:-1])) 
+```
+[100, 99, 98, 97]
+
 5. Are the 40th-44th numbers in the list equal to integers 39-43? Show the Boolean operation you would use to determine the truth value.
+```
+print(list(list100[39:44])) 
+#print(list100[39:44] == [39, 40, 41, 42, 43])                      This returns a FALSE output; use syntax below for TRUE
+print(list(list100[39:44]) == [39, 40, 41, 42, 43])
+```
+[39, 40, 41, 42, 43]
+True
