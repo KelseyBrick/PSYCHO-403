@@ -78,10 +78,37 @@ print([ [strlist[0], strlist[0]],
 
 
 ### Indexing Exercises
-1. Create a list of strings called "colors", containing the following colors in this order: red, orange, yellow, green, blue, purple
+1. See code:
+```
+colours = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
+print(colours)
+```
+['red', 'orange', 'yellow', 'green', 'blue', 'purple']
+
 2. Using indexing, print the penultimate color.
+```
+print(colours[-2])
+```
+blue
+
 3. Using indexing, print the 3rd and 4th characters of the penultimate color.
+```
+print(colours[-2][2])
+print(colours[-2][3])
+```
+u
+e
+
 4. Using indexing, remove the color "purple" and add "indigo" and "violet" to the list instead.
+```
+colours.remove("purple")
+print(colours)
+colours.insert(5,"indigo")
+colours.insert(6,"violet")
+print(colours)
+```
+['red', 'orange', 'yellow', 'green', 'blue'] <br>
+['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 
 ### Slicing exercises
 1. Create a list of numbers 0-100 called "list100".
