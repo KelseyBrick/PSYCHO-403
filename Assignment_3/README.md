@@ -148,5 +148,5 @@ print(list(list100[39:44]))
 #print(list100[39:44] == [39, 40, 41, 42, 43])                      This returns a FALSE output; use syntax below for TRUE
 print(list(list100[39:44]) == [39, 40, 41, 42, 43])
 ```
-[39, 40, 41, 42, 43]
+[39, 40, 41, 42, 43] <br>
 True
