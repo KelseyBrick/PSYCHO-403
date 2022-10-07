@@ -159,10 +159,119 @@ e <br>
 r <br>
 
 4. Add an index counter that gives the index of each letter for each name. The counter should start over at 0 for each name in the list.
+```
+for name in group:
+    print(name)
+    letterCounter = -1
+    for letters in name:    #calls the values (i.e. letters) from the variable name (assigned in previous line)
+        letterCounter = letterCounter + 1
+        print("Letter index # %i" %letterCounter)
+        print(letters)
+```
+Amy <br>
+Letter index # 0 <br>
+A <br>
+Letter index # 1 <br>
+m <br>
+Letter index # 2 <br>
+y <br>
+Rory <br>
+Letter index # 0 <br>
+R <br>
+Letter index # 1 <br>
+o <br>
+Letter index # 2 <br>
+r <br>
+Letter index # 3 <br>
+y <br>
+River <br>
+Letter index # 0 <br>
+R <br>
+Letter index # 1 <br>
+i <br>
+Letter index # 2 <br>
+v <br>
+Letter index # 3 <br>
+e <br>
+Letter index # 4 <br>
+r <br>
 
 ### While loop exercises
 1. Create a while loop of 20 iterations that prints "image1.png" for the first 10 iterations, and "image2.png" for the next 10 iterations.
+```
+iterations = 0                                 #begin counting from 0
+
+while iterations <= 21:                         #arguement for 20 iterations (note: -1, so 20 = 19)    
+    iterations = iterations + 1                 
+    if iterations <= 10:                       #first 10 do this (<=10 necessary to get include 10th; otherwise < 11)
+    #if iterations < 11:
+        print('%i image1.png' %iterations)
+    elif iterations <= 20:                     #next 10 do that (<=20 necessary to get include 20th; otherwise < 21)
+    #elif iterations < 21:
+        print('%i image2.png' %iterations)
+```
+1 image1.png <br>
+2 image1.png <br>
+3 image1.png <br>
+4 image1.png <br>
+5 image1.png <br>
+6 image1.png <br>
+7 image1.png <br>
+8 image1.png <br>
+9 image1.png <br>
+10 image1.png <br>
+11 image2.png <br>
+12 image2.png <br>
+13 image2.png <br>
+14 image2.png <br>
+15 image2.png <br>
+16 image2.png <br>
+17 image2.png <br>
+18 image2.png <br>
+19 image2.png <br>
+20 image2.png <br>
 
 2. Create a while loop that shows an image until the participant makes a response of 1 or 2. Run it a few times to make sure it works the way you expect.
+```
+import random
+image = True
+
+while image:
+    response = random.randint(0, 10)
+       
+    if response == 1 or response == 2:              #have this conditional first otherwise while loops indefinetly
+        image = False
+        print("Response %i made." %response)
+        
+    elif response != 1 or response != 2:
+        print('Response #%i: IMAGE' %response)
+```
+Sample responses screenshot:
+
+![image](https://user-images.githubusercontent.com/113373038/194446734-0eb3af81-08a1-4fbb-b41e-e1b194a52e8c.png)
 
 3. Create a failsafe that terminates the previous while loop after 5 iterations if one of the valid responses (1,2) have not been made in that time.
+```
+import random
+image = True
+failSafe = -1                                       #terminate if no response after 5 iterations
+while image:
+    response = random.randint(0, 10)
+    failSafe = failSafe + 1
+    
+    if failSafe == 5:
+        print("Too many attempts. Trial stopped.")
+        break
+        
+    if response == 1 or response == 2:              #have this conditional first otherwise while loops indefinetly
+        image = False
+        print("Response %i made." %response)
+        
+    elif response != 1 or response != 2:
+        print('Response #%i: IMAGE' %response)
+ ```
+ Sample response screenshot:
+ 
+ ![image](https://user-images.githubusercontent.com/113373038/194446953-1fdf2935-c751-427a-b96d-f897f7fa4b71.png)
+
+ 
