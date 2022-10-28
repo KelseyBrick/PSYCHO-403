@@ -1,6 +1,6 @@
 ### Experiment structure exercises
 
-see [file name](link).
+see [Level_3_Exercises_v2.py](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Assignment_5/Level_3_Exercises_v2.py).
 
 **Note**: this code may change based on subsequent exercises used to complete this experiment's code.
 - Lines 54-66: these include possible properities required in this experiment. Some may be added, deleted, or modified based on final code.
