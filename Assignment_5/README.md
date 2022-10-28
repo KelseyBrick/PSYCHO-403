@@ -27,3 +27,31 @@ import os, random, pprint
 ### Directory exercises
 
 ```
+#=====================
+#PATH SETTINGS
+#=====================
+#-define the main directory where you will keep all of your experiment files
+main_dir = os.getcwd()                                                          # C:\Users\kelse\Google Drive\00 University of Alberta\2022- Fall\PSYCH 403
+#-define the directory where you will save your data
+data_dir = os.path.join(main_dir, 'experiments','exercise_data')                # C:\Users\kelse\Google Drive\00 University of Alberta\2022- Fall\PSYCH 403\experiments\exercise_data
+#-if you will be presenting images, define the image directory
+image_dir = os.path.join(main_dir,'experiments','exercise_stimulus')            # C:\Users\kelse\Google Drive\00 University of Alberta\2022- Fall\PSYCH 403\experiments\exercise_stimulus
+#-check that these directories exist >>> SEE BELOW (Lines 57-63)
+```
+
+Check matching of list and directory contents (Lines 57-63):
+```
+# check if images exist in the directory
+path = image_dir 
+fileList = os.listdir(path)
+missing = [name for name in img if name not in fileList]                        # identifies which image is missing if the fileList and img[] don't match
+if missing == []:                                                               # if missing returns None value == True and fileList and img[] MATCH
+    print('The lists match')
+else:                                                                           # if missing returns ANY value then the fileList and img[] DON'T MATCH
+    print('This image is missing: ' + str(missing) + '. The image lists do not match up!')
+```
+Output test: 
+<br> MATCHING: 
+<br> The lists match
+<br> DIFFERENT: 
+<br> This image is missing: ['face01.jpg']. The image lists do not match up!
