@@ -89,19 +89,15 @@ sub_dir = os.path.join(main_dir,'experiments','subject_dir',filename)
 ### Window and monitor exercises
 1. How does changing "units" affect how you define your window size?
 
-Every monitor must be defined because their units (ex., width, viewing distance, and pixel resolution) affect how the default window is displayed.
-* the default window display is 800x600 pixels, centred, and white
-```
-win = visual.Window(monitor=mon)                            #default
-```
-![image](https://user-images.githubusercontent.com/113373038/201561613-ea2a3897-0eae-4e08-a434-938b28347576.png)
+Source: https://psychopy.org/general/units.html#units; https://psychopy.org/api/visual/window.html#psychopy.visual.Window
 
-* changing the pixel ratio in the 'size' parameter will change the window display size. 
-```
-win = visual.Window(monitor=mon, 
-                    size=(1600,900))                       #adjusted units
-```
-![image](https://user-images.githubusercontent.com/113373038/201561454-2c3ef104-cfbd-4134-a2cb-057c3ac0c7d5.png)
+The 'units' parameter determines how stimuli is drawn in the window based on monitor settings provided. Psychopy uses these settings to calculate an appropriate pixel size of the stimulus. It has the following values that can be defined:
+* None: default; stimulus presentation ONLY based on monitor settings provided.
+* ‘height’ (of the window): scales stimuli relative to participant screen; no monitor info required.
+* ‘norm’ (normalised): maintains aspect ratio of the screen; no monitor info required. 
+* ‘deg’: sets stimuli based on degrees of the visual angle;  requires screen width, veiwing distance and pixel info.
+* ‘cm’: sets stimuli size and location in centimeters; requires screen width and pixel info.
+* ‘pix’: sets stimuli based on pixels; requires screen pixel info.
 
 2. How does changing colorSpace affect how you define the color of your window? 
 
