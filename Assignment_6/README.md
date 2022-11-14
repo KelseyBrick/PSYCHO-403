@@ -115,4 +115,22 @@ Can you define colors by name?
 
 **Yes**, see above.
 
-3. Fill in the following pseudocode with the real code you have learned so far:
+3. Fill in the following pseudocode with the real code you have learned so far. (see lines 177-188, **here**)
+```
+#-define the monitor settings using psychopy functions
+mon = monitors.Monitor('myMonitor', 
+                       width=48.93, 
+                       distance=75)                                             #defines name, width, and viewing distance from monitor
+mon.setSizePix([1920,1080])                                                     #defines the pixel resolution with (x,y) coordinates
+
+#-define the window (size, color, units, fullscreen mode) using psychopy functions
+win = visual.Window(monitor=mon)
+win = visual.Window(monitor=mon, 
+                    size=(1600,900),
+                    color=('#ad17a3'),
+                    units='height',
+                    fullscr=None
+                    )
+```
+![image](https://user-images.githubusercontent.com/113373038/201568503-75515738-7447-4453-ab4e-09c9c7484523.png)
+
