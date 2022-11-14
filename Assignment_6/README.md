@@ -136,9 +136,33 @@ Example of silly window colour used in the code above:
 ![image](https://user-images.githubusercontent.com/113373038/201568503-75515738-7447-4453-ab4e-09c9c7484523.png)
 
 ### Stimulus exercises
+
+Source: psychopy.org/api/visual/imagestim.html
+
 1. Write a short script that shows different face images from the image directory at 400x400 pixels in size. What does this do to the images? How can you keep the proper image dimensions and still change the size?
 
+See script here:
+
+Changing these settings squished the image. This required units to be set to pixels and the size specified.
+* To keep dimensions and change inmage size, use a scalar value in the size property of visual.ImageStim class.
+```
+my_image = visual.ImageStim(win)                                               #default
+my_image = visual.ImageStim(win, units='pix', size=(400,400))                  #create the stimulus 400x400 pixels
+my_image = visual.ImageStim(win, size=0.5)                                     #scalar- change image size, but keep dimensions
+```
+
+Default, without 400x400: 
+![image](https://user-images.githubusercontent.com/113373038/201770769-7523bb97-c82c-4013-ae20-da0deaff0f5b.png)
+
+With 400x400 settings:
+![image](https://user-images.githubusercontent.com/113373038/201770965-725a1cac-3397-4042-a546-850d86c6891b.png)
+
+With scalar value of 50%:
+![image](https://user-images.githubusercontent.com/113373038/201776515-3ceae306-0c26-4dbd-8e4e-b727e70bee85.png)
+
 2. Write a short script that makes one image appear at a time, each in a different quadrant of your screen (put the window in fullscreen mode). Think about how you can calculate window locations without using a trial-and-error method.
+
+
 
 3. Create a fixation cross stimulus (hint:text stimulus).
 
