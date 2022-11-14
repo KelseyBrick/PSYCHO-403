@@ -103,9 +103,20 @@ win = visual.Window(monitor=mon,
 ```
 ![image](https://user-images.githubusercontent.com/113373038/201561454-2c3ef104-cfbd-4134-a2cb-057c3ac0c7d5.png)
 
+2. How does changing colorSpace affect how you define the color of your window? 
 
+Different colourspaces use different methods to define colours. See below.
 
+Colours can be defined by (source: https://www.psychopy.org/general/colours.html):
+* RGB: psychopy defaults to tri-values between -1 to 1 to indicate saturation of red, green, and blues. It can be told to use rgb255.
+* DKL: Requires the monitor to be calibrated and uses 3D spherical space to define colours. Psychopy also uses tri-values between 1 to -1 in defining the degrees of elevation, azimuth, and a float.
+* LMS: Requires the monitor to be calibrated and permits colour definition for independent cones.
+* HEX: hexidecimal number that can be found in an online chart (ex., #B8860B); https://htmlcolorcodes.com/color-picker/
+* HSV: uses a tri-value hue, saturation, and 'value' to define a colour.
+* Or by name: uses web/X11 colour names (ex., DarkGoldenRod); not case sensitive, but no spaces used.           
 
-2. How does changing colorSpace affect how you define the color of your window? Can you define colors by name?
+Can you define colors by name? 
+
+**Yes**, see above.
 
 3. Fill in the following pseudocode with the real code you have learned so far:
