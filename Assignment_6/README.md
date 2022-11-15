@@ -100,7 +100,7 @@ The 'units' parameter determines how stimuli is drawn in the window based on mon
 
 Different colourspaces use different methods to define colours. See below.
 
-Colours can be defined by (source: https://www.psychopy.org/general/colours.html):
+Colours can be defined by (reference: https://www.psychopy.org/general/colours.html):
 * RGB: psychopy defaults to tri-values between -1 to 1 to indicate saturation of red, green, and blues. It can be told to use rgb255.
 * DKL: Requires the monitor to be calibrated and uses 3D spherical space to define colours. Psychopy also uses tri-values between 1 to -1 in defining the degrees of elevation, azimuth, and a float.
 * LMS: Requires the monitor to be calibrated and permits colour definition for independent cones.
