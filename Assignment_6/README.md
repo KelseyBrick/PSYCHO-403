@@ -57,7 +57,7 @@ my_dlg = gui.DlgFromDict(dictionary=exp_info,
 ```
 A print() funtion has been added between the dictionary and the dialog box code.
 
-e) Edit the psuedo code in the experiment document (see lines 38-58, **here**)
+e) Edit the psuedo code in the experiment document (see [Level_4_Exercises_v3.py](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Assignment_6/Level_4_Exercises_v3.py): lines 38-58)
 ```
 #-create a dialogue box that will collect current participant number, age, gender, handedness
 exp_info = {'subject_nr':0, 
@@ -112,7 +112,7 @@ Can you define colors by name?
 
 **Yes**, see above.
 
-3. Fill in the following pseudocode with the real code you have learned so far. (see lines 167-179, **here**)
+3. Fill in the following pseudocode with the real code you have learned so far. ((see [Level_4_Exercises_v3.py](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Assignment_6/Level_4_Exercises_v3.py): see lines 167-179)
 ```
 #-define the monitor settings using psychopy functions
 mon = monitors.Monitor('myMonitor', 
@@ -138,7 +138,7 @@ References: psychopy.org/api/visual/imagestim.html; https://psychopy.org/api/vis
 
 1. Write a short script that shows different face images from the image directory at 400x400 pixels in size. What does this do to the images? How can you keep the proper image dimensions and still change the size?
 
-See script here:
+See script here: [Level_4_Exercises_stimQ1](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Assignment_6/Level_4_Exercises_stimQ1.py)
 
 Changing these settings squished the image. This required units to be set to pixels and the size specified.
 * To keep dimensions and change inmage size, use a scalar value in the size property of visual.ImageStim class.
@@ -159,13 +159,13 @@ With scalar value of 50%:
 
 2. Write a short script that makes one image appear at a time, each in a different quadrant of your screen (put the window in fullscreen mode). Think about how you can calculate window locations without using a trial-and-error method.
 
-See script here: 
+See script here: [Level_4_Exercises_stimQ2](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Assignment_6/Level_4_Exercises_stimQ2.py)
 
 3. Create a fixation cross stimulus (hint:text stimulus).
 
-See script here:
+See script here: [Level_4_Exercises_stimQ3](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Assignment_6/Level_4_Exercises_stimQ3.py)
 
-4. Fill in the following pseudocode with the real code you have learned so far: (see full script)
+4. Fill in the following pseudocode with the real code you have learned so far: (see [Level_4_Exercises_v3.py](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Assignment_6/Level_4_Exercises_v3.py)
 
 Code example:
 ```
