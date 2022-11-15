@@ -57,7 +57,7 @@ my_dlg = gui.DlgFromDict(dictionary=exp_info,
 ```
 A print() funtion has been added between the dictionary and the dialog box code.
 
-e) Edit the psuedo code in the experiment document (see lines 44-68, **here**)
+e) Edit the psuedo code in the experiment document (see lines 38-58, **here**)
 ```
 #-create a dialogue box that will collect current participant number, age, gender, handedness
 exp_info = {'subject_nr':0, 
@@ -74,16 +74,13 @@ my_dlg = gui.DlgFromDict(dictionary=exp_info,
                          order=['session', 'subject_nr', 'age', 'gender', 'handedness'])
 
 #get date and time
-date = datetime.now() #what time is it right now?
+date = datetime.now()                                                           #what time is it right now?
 exp_info['date'] = str(date.day) + str(date.month) + str(date.year)             #adds 'date' key into the dictionary
 print(exp_info['date'])
 
 #-create a unique filename for the data
 filename = str(exp_info['subject_nr']) + '_' + exp_info['date'] + '.csv'
 print(filename)
-
-#create a subject info directory to save subject info
-sub_dir = os.path.join(main_dir,'experiments','subject_dir',filename) 
 ```
 
 ### Window and monitor exercises
@@ -115,7 +112,7 @@ Can you define colors by name?
 
 **Yes**, see above.
 
-3. Fill in the following pseudocode with the real code you have learned so far. (see lines 177-188, **here**)
+3. Fill in the following pseudocode with the real code you have learned so far. (see lines 167-179, **here**)
 ```
 #-define the monitor settings using psychopy functions
 mon = monitors.Monitor('myMonitor', 
@@ -129,7 +126,7 @@ win = visual.Window(monitor=mon,
                     size=(1600,900),
                     color=('#ad17a3'),
                     units='height',
-                    fullscr=None
+                    fullscr=None                                                #can be set to 'fullscr=True'; not done to prevent getting stuck in fullscr. 
                     )
 ```
 Example of silly window colour used in the code above:
@@ -168,6 +165,97 @@ See script here:
 
 See script here:
 
-4. Fill in the following pseudocode with the real code you have learned so far:
+4. Fill in the following pseudocode with the real code you have learned so far: (see full script)
 
+Code example:
+```
+#-define experiment start text unsing psychopy functions
+start_msg = "Welcome to my experiment! Press any key to begin."
+#-define block (start)/end text using psychopy functions
 
+block_msg = "Press any key to continue to the first trial."
+    
+end_experiment_msg = "End of trials and the experiment. Press any key to exit."
+
+textStim = visual.TextStim(win)                                                 #create undefined text stimulus 
+
+#-define stimuli using psychopy functions (images, fixation cross)
+# stims = img                                                                     #create a list if images to show (uses code lines 69-82 from IMAGES AND TRIAL SETTINGS)                                                                  #create a number of trials for your images
+my_image = visual.ImageStim(win, units='pix', size=(200,200))                   #create the stimulus; this script only works with units and size defined.
+fixCross = visual.TextStim(win, text='+')                                       #define fixation cross
+
+#-create response time clock
+#-make mouse pointer invisible
+
+#=====================
+#START EXPERIMENT
+#=====================
+#-present start message text
+textStim.text = start_msg                                                       #define the text
+textStim.draw()                                                                 #draw start message
+win.flip()                                                                      #show the stim
+#-allow participant to begin experiment with button press
+event.waitKeys()                                                                #wait for keypress
+
+#=====================
+#BLOCK SEQUENCE
+#=====================
+counter = 0
+#-for loop for nBlocks *
+for block in nBlocks:
+    counter = counter + 1
+    #-present block start message
+    textStim.text = ('Block ' + str(counter) + '. ' + block_msg)                #define the text
+    textStim.draw()                                                             #draw block message
+    win.flip()                                                                  #show the next stim
+    event.waitKeys()                                                            #wait for keypress
+    #-randomize order of trials here 
+    np.random.shuffle(img)                                                      #random, counterbalnced trial order
+    #-reset response time clock here
+    
+    #=====================
+    #TRIAL SEQUENCE
+    #=====================    
+    #-for loop for nTrials *
+    for trial in nTrials:
+        #-set stimuli and images properties for the current trial
+        my_image.image = os.path.join(image_dir, img[trial])
+        #-empty keypresses
+        
+        #=====================
+        #START TRIAL
+        #=====================   
+        #-draw fixation
+        fixCross.draw()                                                         #draw
+        #-flip window
+        win.flip()                                                              #show
+        #-wait time (stimulus duration)
+        
+        #-draw image
+        my_image.draw()                                                         #draw
+        #-flip window
+        win.flip()                                                              #show
+        #-wait time (stimulus duration)
+        event.waitKeys()                                                        #wait for keypress
+        
+#-draw end trial text
+textStim.text = end_experiment_msg                                              #define the text
+textStim.draw()                                                                 #draw end of experiment message
+#-flip window
+win.flip()                                                                      #show
+#-wait time (stimulus duration)
+event.waitKeys()                                                                #wait for keypress
+        
+        #-collect subject response for that trial
+        #-collect subject response time for that trial
+        #-collect accuracy for that trial
+
+#======================
+# END OF EXPERIMENT
+#======================        
+#-write data to a file
+
+#-close window
+win.close()                                                                 #close the window after all trials have looped                                    
+#-quit experiment
+```
