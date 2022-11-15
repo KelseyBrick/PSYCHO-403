@@ -86,7 +86,7 @@ print(filename)
 ### Window and monitor exercises
 1. How does changing "units" affect how you define your window size?
 
-Source: https://psychopy.org/general/units.html#units; https://psychopy.org/api/visual/window.html#psychopy.visual.Window
+References: https://psychopy.org/general/units.html#units and https://psychopy.org/api/visual/window.html#psychopy.visual.Window
 
 The 'units' parameter determines how stimuli is drawn in the window based on monitor settings provided. Psychopy uses these settings to calculate an appropriate pixel size of the stimulus. It has the following values that can be defined:
 * None: default; stimulus presentation ONLY based on monitor settings provided.
