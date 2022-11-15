@@ -112,7 +112,7 @@ Can you define colors by name?
 
 **Yes**, see above.
 
-3. Fill in the following pseudocode with the real code you have learned so far. ((see [Level_4_Exercises_v3.py](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Assignment_6/Level_4_Exercises_v3.py): see lines 167-179)
+3. Fill in the following pseudocode with the real code you have learned so far. (see [Level_4_Exercises_v3.py](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Assignment_6/Level_4_Exercises_v3.py): see lines 167-179)
 ```
 #-define the monitor settings using psychopy functions
 mon = monitors.Monitor('myMonitor', 
@@ -134,7 +134,7 @@ Example of silly window colour used in the code above:
 
 ### Stimulus exercises
 
-References: psychopy.org/api/visual/imagestim.html; https://psychopy.org/api/visual/textstim.html
+References: https://psychopy.org/api/visual/imagestim.html and https://psychopy.org/api/visual/textstim.html
 
 1. Write a short script that shows different face images from the image directory at 400x400 pixels in size. What does this do to the images? How can you keep the proper image dimensions and still change the size?
 
