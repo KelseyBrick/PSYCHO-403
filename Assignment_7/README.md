@@ -40,6 +40,7 @@ See: FILE XXX
 See: FILE XXX
 
 Summary of time dofferences between Clocks Q1-Q3:
+
 ![image](https://user-images.githubusercontent.com/113373038/203163460-9180d17f-5212-4bf3-aa84-0e1e9b0dc6cf.png)
 The differences between these three methods was nominal on my computer (Decending outputs: Q1, Q2, Q3).
 
