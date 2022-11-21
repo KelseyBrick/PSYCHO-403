@@ -46,6 +46,7 @@ Summary of time differences between Clocks Q1-Q3:
 The differences between these three methods was nominal on my computer (Decending outputs: Q1, Q2, Q3).
 
 6. Edit your main experiment script so that the trials loop according to a clock timer. Also create and implement a block_timer and a trial_timer.
+See: FILE XXX
 
 ### Frame-based timing exercises
 1. Adjust your experiment so that it follows frame-based timing rather than clock timing (comment out the clock-based timing code in case you want to use it again) using for loops and if statements.
