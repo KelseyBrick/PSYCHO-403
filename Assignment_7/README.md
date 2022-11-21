@@ -34,10 +34,19 @@ See: FILE XXX
 
 On test, using the core.wait function, the outputs were:
 ![image](https://user-images.githubusercontent.com/113373038/203156124-68434afe-442d-4b65-903c-8a31d82a408c.png)
+These numbers are relatively precise.
 
 2. Create a "clock_wait_timer" to find out exactly how long each image is presented when you use a clock + while loops. How precise is this?
-3. Create a "countdown_timer" to find out exactly how long each image is presented when you use a CountdownTimer + while loops. How precise is this?
-4. Edit your main experiment script so that the trials loop according to a clock timer. Also create and implement a block_timer and a trial_timer.
+See: FILE XXX
+
+On test, using clock + while loops, the outputs were:
+
+4. Create a "countdown_timer" to find out exactly how long each image is presented when you use a CountdownTimer + while loops. How precise is this?
+See: FILE XXX
+
+On test, using CountdownTimer + while loops, the outputs were:
+
+6. Edit your main experiment script so that the trials loop according to a clock timer. Also create and implement a block_timer and a trial_timer.
 
 ### Frame-based timing exercises
 1. Adjust your experiment so that it follows frame-based timing rather than clock timing (comment out the clock-based timing code in case you want to use it again) using for loops and if statements.
