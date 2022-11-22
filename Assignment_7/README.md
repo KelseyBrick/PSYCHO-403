@@ -51,3 +51,11 @@ See: FILE XXX
 ### Frame-based timing exercises
 1. Adjust your experiment so that it follows frame-based timing rather than clock timing (comment out the clock-based timing code in case you want to use it again) using for loops and if statements.
 2. Add a "dropped frame" detector to your script to find out whether your experiment is dropping frames. How many total frames are dropped in the experiment? If 20 or fewer frames are dropped in the whole experiment (1 frame per trial), keep frame-based timing in your experiment. Otherwise, switch back to the CountdownTimer.
+
+Q1 & Q2: see
+
+Dropped frame check in console:
+
+![image](https://user-images.githubusercontent.com/113373038/203185662-32b1b40b-519b-4954-9987-45e05ff2be4a.png)
+
+**NOTE: not sure why I have so many drop frames. I still need to experiment with this a bit, but my guess is that I have a mix of clocks and frame-based timing. I need to integrate frame-based timing into meta and block level experiment timing. But overall an interesting output.
