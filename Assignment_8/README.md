@@ -57,7 +57,7 @@ Unindenting the "if keys" only collects the sub_resp from the last trial, instea
 
 <img width="945" alt="image" src="https://user-images.githubusercontent.com/113373038/204442869-80f7d182-df49-4c89-a5fe-b621d944b5d2.png">
 
-Data output example. See Code here: (Level_6_Exercises_V2)[https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Assignment_8/Level_6_Exercises_V2.py] (LINES: 55-158)
+Data output example. See Code here: [Level_6_Exercises_V2](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Assignment_8/Level_6_Exercises_V2.py) (LINES: 55-158)
 
 2. Keep in mind that you can pre-define dictionaries or lists for the whole experiment (in which case you have to use [block][trial] indexing to collect responses) or you can do it block-by-block (in which case you can use [trial] indexing). Create your lists (or dictionary, if you prefer) within the block loop and switch to [trial] indexing.
 
@@ -71,7 +71,7 @@ BACK TO TABLE OF CONTENTS
 
 
 See '#' LINES 170-187 in 'Recording data exercises' Q1 file.
-See .csv: (testDataNov282022)[https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Assignment_8/testDataNov282022.csv] 
+See .csv: [testDataNov282022](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Assignment_8/testDataNov282022.csv)
 
 # SORRY!! THESE ONES BELOW ARE NOT COMPLETE :(
 
