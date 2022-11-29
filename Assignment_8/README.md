@@ -1,11 +1,56 @@
 ### PsychoPy keypress exercises
-1. event.getKeys is prone to collect as many responses as you can make in a trial, but often times you only want to collect one response for a trial. Come up with a solution so that only a single response is recorded from event.getKeys (e.g., ignoring all responses after the first response). Hint: one solution is used somewhere else in level6.
+1. event.getKeys is prone to collect as many responses as you can make in a trial, but often times you only want to collect one response for a trial. 
+* Soultion so a single response is recorded from event.getKeys
+
+```
+from psychopy import core, gui, visual, event, monitors                         # core for this lesson
+# from psychopy import core, gui, visual, event, monitors
+#-define the monitor settings using psychopy functions
+mon = monitors.Monitor('myMonitor',
+                       width=48.93,
+                       distance=75)                                            #defines name, width, and viewing distance from monitor
+mon.setSizePix([1920,1080])                                                    #defines the pixel resolution with (x,y) coordinates
+win = visual.Window(monitor=mon)                                               #define a window
+
+
+nTrials=3
+my_text=visual.TextStim(win)
+fix=visual.TextStim(win, text='+')
+
+for trial in range(nTrials):
+    
+    keys = event.getKeys(keyList=['1','2'])                                     #define getkeys
+    my_text.text = ("Trial " + str(trial) + "...Press keys 1 or 2")                
+    
+    fix.draw()
+    win.flip()
+    core.wait(2)
+    
+    event.clearEvents()                                                         #clear any keys presses just prior to collecting responses
+    
+    my_text.draw()
+    win.flip()
+    core.wait(1)
+    
+    print("The keys pressed were ", keys)                                       #which key did the subject were press?
+    
+    if keys:
+        sub_resp = keys[0]                                                      #if more than one key pressed only take the first response
+        print("Only this key press counted: ", sub_resp)    
+    
+win.close()
+```
+Indexing used to set the only recorded response to the first one in the collect .getKeys list.
+
 2. Statement placement in your script is very important when collecting responses and refreshing keypresses. What happens if you put event.ClearEvents within the trial loop instead of outside the trial loop? What happens if you unindent the "if keys:" line?
 
-### Psychtoolbox keypress exercises
-1. Notice how "for key in keys:" in the kb examples of level6 are not indented within the stimulus presentation while loop. What happens if you indent this line? How is this different from event.getKeys?
-2. Try out the kb keypress functions using core.wait instead of a CountdownTimer. What happens?
-3. Use your favorite search engine to interpret epoch time from key.tDown. Add a bit of code using datetime or ctime modules to print epoch time into a readable format.
+<img width="953" alt="image" src="https://user-images.githubusercontent.com/113373038/204427460-bfebb073-5fd4-4e50-ae1e-b9012f0854a8.png">
+
+Putting the .clearEvents() outside of the loop seems to be preventing response collection in my first trial, but collects inn the subsequent trials.
+
+<img width="941" alt="image" src="https://user-images.githubusercontent.com/113373038/204428399-fbb82586-e7e5-4f27-81a7-095745c2061d.png">
+
+Unindenting the "if keys" only collects the sub_resp from the last trial, instead of after each trial.
 
 ### Recording data exercises
 1. Instead of collecting key name, subject RT, subject accuracy, and correct responses in lists, create a dictionary containing those variables. Then, during response collection, append the data to the dictionary instead of filling lists.
