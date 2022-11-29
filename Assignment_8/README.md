@@ -54,11 +54,26 @@ Unindenting the "if keys" only collects the sub_resp from the last trial, instea
 
 ### Recording data exercises
 1. Instead of collecting key name, subject RT, subject accuracy, and correct responses in lists, create a dictionary containing those variables. Then, during response collection, append the data to the dictionary instead of filling lists.
+
+<img width="945" alt="image" src="https://user-images.githubusercontent.com/113373038/204442869-80f7d182-df49-4c89-a5fe-b621d944b5d2.png">
+
+Data output example. See Code here: (Here)[xxx] (LINES: 55-158)
+
 2. Keep in mind that you can pre-define dictionaries or lists for the whole experiment (in which case you have to use [block][trial] indexing to collect responses) or you can do it block-by-block (in which case you can use [trial] indexing). Create your lists (or dictionary, if you prefer) within the block loop and switch to [trial] indexing.
+
+<img width="654" alt="image" src="https://user-images.githubusercontent.com/113373038/204443572-f2d55d77-1d23-45a4-86be-0d795b783084.png">
+
+This was acheived bby shifting code into the trial 'for loop'. See '#' LINES 102-107 in Q1 file.
 
 ### Save csv exercises
 1. Using csv.DictWriter (use your favorite search engine to find the help page), save your dictionary (that you created above) as a .csv file.
 BACK TO TABLE OF CONTENTS
+
+
+See '#' LINES 170-187 in 'Recording data exercises' Q1 file.
+See .csv: 
+
+# SORRY!! THESE ONES BELOW ARE NOT COMPLETE :(
 
 ### Save JSON exercises
 1. Add JSON filesaving to your experiment script.
