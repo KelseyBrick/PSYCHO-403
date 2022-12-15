@@ -12,6 +12,9 @@ Waldo Answers:
 * [Waldo05](https://www.deviantart.com/where-is-waldo-wally/art/Where-s-Waldo-Now-Book-2-Scene-12-462401664)
 * [Waldo06](https://www.deviantart.com/where-is-waldo-wally/art/Where-s-Waldo-The-Wonder-Book-Book-5-S2-464390635)
 
+### Skip the first script with this file:
+[WaldoAnswers CSV](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Experiment/waldoLocations.csv)
+
 ### This is current version of Waldo's experiment:
 [Waldo experiment script](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Experiment/waldoExp_v3.py)
 
