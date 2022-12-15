@@ -1,4 +1,4 @@
-
+### Six images in the experiemnt
 [Waldo Images](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/tree/main/Experiment/images)
 
 ### This is set to identify Waldo's locations:
