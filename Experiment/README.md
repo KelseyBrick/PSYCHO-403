@@ -43,7 +43,7 @@ This experiment collects and saves the following info:
 * "Trial_Number", "Image_Name", "Click_Count", "Time_to_Click", "Click_Coordinates", and "Find_Accuracy"
 
 [Example output](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Experiment/experimentData/2_1_outputFile.csv)
-Filenames are coded by condition number first, so they auto-sort while saving.
+* Filenames are coded by condition number first, so they auto-sort while saving.
 
 One issue with this script is that visual noise is currently confounded with a zooming effect when the image is displayed. Because each image is cropped and then normalized to a fullscreen mode, smaller images zoom in. That is, not only is there less content to search in the image, the size of the content becomes bigger because a smaller image has more room to expand into a full-sized screen. As a result, the change in search speed could be due to less or easier-to-see content.
 
