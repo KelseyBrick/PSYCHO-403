@@ -3,6 +3,7 @@
 
 ### This is set to identify Waldo's locations:
 [Identify Waldo script](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Experiment/identifyWaldo.py)
+
 This script was created as an experiment helper. This experiment will only work with identifying a click location of a target. 
 * Allows the experimenter to set a list of target coordinates that are then imported into the actual experiment.
 * Script is designed to mark the target and pause to ensure the location choice is accurate.
