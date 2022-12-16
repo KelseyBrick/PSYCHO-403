@@ -1,10 +1,15 @@
-### Six images in the experiment
+### Eighteen images in the experiment
 [Waldo Images](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/tree/main/Experiment/images)
 
 ### This is set to identify Waldo's locations:
-[Identify Waldo script](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Experiment/identifyWaldo_V2.py)
+[Identify Waldo script](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Experiment/identifyWaldo.py)
+This script was created as an experiment helper. This experiemnt will not work without identifying a click location of a target. 
+* Allows the experimenter to set a list of target coordinates that are then imported into the actual experiment.
+* Script is designed to mark the target and pause to ensure the location choice was accurate.
+* A click count could be added to this if an average or range of click locations was desired. 
+* Any images containing a target could be used in place of Waldo photos.
 
-Waldo Answers: 
+Waldo Answers used: 
 * [Waldo01](https://www.deviantart.com/where-is-waldo-wally/art/Where-s-Waldo-Book-1-Scene-2-789863105)
 * [Waldo02](https://www.deviantart.com/where-is-waldo-wally/art/Where-s-Waldo-Book-1-Scene-3-789863397)
 * [Waldo03](https://www.deviantart.com/where-is-waldo-wally/art/Where-s-Waldo-Book-1-Scene-7-789864742)
@@ -12,16 +17,11 @@ Waldo Answers:
 * [Waldo05](https://www.deviantart.com/where-is-waldo-wally/art/Where-s-Waldo-Now-Book-2-Scene-12-462401664)
 * [Waldo06](https://www.deviantart.com/where-is-waldo-wally/art/Where-s-Waldo-The-Wonder-Book-Book-5-S2-464390635)
 
-### Skip the first script with this file:
-[WaldoAnswers CSV](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Experiment/waldoLocations.csv)
+### To try this experiment and skip the first script with this file:
+[WaldoAnswers CSV](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Experiment/experimentData/waldoLocations.csv)
 
-### This is current version of Waldo's experiment:
+### This is the Waldo's experiment:
 [Waldo experiment script](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Experiment/waldoExp_v3.py)
 
-* click_times are filling a list; think I want to change this to cumulative time at each click (right now it is more of an RT time)
-* want to implement a whole trial time per image (minus time taken when participants asked click)
-* add saved data parameters around True v. False finds on Waldo
-* implement Full, 2/3, 1/3 images for different groups (need to edit images which I can do quickly in PhotoShop; then code block per group?) 
-* counter balance conditions (should be easy)
-* add GUI (easy)
-* add data saving (also easy)
+* Set up to run three betwee-subject conditions:
+
