@@ -1,5 +1,5 @@
 ### Eighteen images in the experiment:
-[Waldo Images](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/tree/main/Experiment/images)
+[Waldo Images](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/tree/main/Experiment/Images)
 
 ### This is set to identify Waldo's locations:
 [Identify Waldo script](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Experiment/identifyWaldo.py)
@@ -21,7 +21,7 @@ Waldo Answers used:
 [WaldoAnswers CSV](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Experiment/experimentData/waldoLocations.csv)
 
 ### This is the Waldo's experiment:
-[Waldo experiment script](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Experiment/waldoExp_v3.py)
+[Waldo experiment script](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Experiment/waldoExp.py)
 
 ### *Question: Does visual noise affect participant search time and accuracy?*
 * Visual noise is defined by the number of contents contained within the image. One hundred percent would be a full-size image. Reductions in visual noise will crop the original image, thus limiting content that needs to be searched.
