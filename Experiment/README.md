@@ -1,7 +1,7 @@
 ### Eighteen images in the experiment:
 [Waldo Images](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/tree/main/Experiment/Images)
 
-[Original images]()
+[Original images links](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Experiment/Images/imageCitation.md)
 
 
 ### This is set to identify Waldo's locations:
