@@ -17,4 +17,4 @@ Image cropping was completed using photoshop clipping masks set to condition cro
   *  y-values were reversed (i.e. switch +/-) and then added to 949.5 (center point of y-axis of original image)
   *  Waldo was then dragged to this new point and the image was saved.
 
-[Calculations example]()
+[Calculations example](https://github.com/KelseyBrick/PSYCHO-403-Fall-2022/blob/main/Experiment/experimentData/waldoLocationsCalcs.csv)
